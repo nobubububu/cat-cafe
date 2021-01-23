@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon"  href="images/reccurent-favicon.png">
+<title>リカレント</title>
+</head>
+<body>
+	<header class="wrapper">
+		<div class="header-items">
+			<div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+			<div>
+				<div class="form-items">
+					<img src="images/iconTel.png">
+					<p>0000-00-0000</p>
+				</div>
+				<p class="form-button">お問い合わせ</p>
+			</div>
+		</div>
+		<div class="drawer sp">
+			<div class="drawer-menu">
+				<input type="checkbox" id="menu-btn-check">
+				<label for="menu-btn-check" class="menu-btn"><span></span></label>
+				<!--ここからメニュー-->
+				<div class="menu-content">
+					<ul>
+						<li class="menu-items"><a href="#">ホーム</a></li>
+						<li class="menu-items"><a href="#">リカレントについて</a></li>
+						<li class="menu-items"><a href="#">スタッフ紹介</a></li>
+						<li class="menu-items"><a href="#">メニュー</a></li>
+						<li class="menu-items"><a href="#">アクセス</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="nav-wrap">
+			<ul>
+				<li class="header-home list-before"><a href="#">ホーム</a></li>
+				<li class="header-about list-before"><a href="#">リカレントについて</a></li>
+				<li class="header-staff list-before"><a href="#">スタッフ紹介</a></li>
+				<li class="header-menu list-before"><a href="#">メニュー</a></li>
+				<li class="header-access list-before"><a href="#">アクセス</a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<div class="main-img">
+			<img src="images/MainVisual.png" alt="猫">
+			<p>ねこがいる空間で<br><br>ゆっくり過ごしていただけるカフェ</p>
+		</div>
+		<div class="main-items wrapper">
+			<div class="news" id="news-wrap">
+				<h2>News</h2>
+				<p>お知らせ一覧</p>
+			</div>
+			<div class="border-top">
+				<div>
+					<div class="news-item">
+						<p>2020.00.00</p>
+						<p class="text-box">お知らせ</p>
+					</div>
+					<p class="news-text">お知らせ内容が入ります</p>
+				</div>
+				<div>
+					<div class="news-item">
+						<p>2020.00.00</p>
+						<p class="text-box" id="event">イベント</p>
+					</div>
+					<p class="news-text">お知らせ内容が入ります</p>
+				</div>
+				<div>
+					<div class="news-item">
+						<p>2020.00.00</p>
+						<p class="text-box">お知らせ</p>
+					</div>
+					<p class="news-text">お知らせ内容が入ります</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="wrapper">
+			<h2 id="about-us">About Us</h2>
+			<div class="text-space">
+				<p>リカレントでは、広いリビングのようなスペースでたくさんの個性豊かな猫たちが自由気ままに過ごしています。<br>店内おもちゃで遊んでみたり、カメラや携帯で撮影してみたり、ガラス越しのドリンクスペースから猫を眺めつつお茶をしてみたり、読書や、ときにはぼーっと観察してみたり猫たちとの穏やかなひとときをお過ごしいただけます。<br>猫に癒されながらのんびりとご自由にお寛ぎ下さいませ。</p>
+			</div>
+		</div>
+		<div id="staff-bg">
+			<div class="wrapper">
+				<h2 id="staff">Staff</h2>
+				<p class="text-space">リカレント自慢のねこスタッフをご紹介します。</p>
+				<div class="staff-wrap">
+					<div class="staff-flex">
+						<div class="staff-items">
+							<img src="images/cat03.jpg">
+							<p>リカ</p>
+							<p class="staff-text">2016.12.1 生まれ　MIX</p>
+						</div>
+						<div class="staff-items">
+							<img src="images/cat01.jpg">
+							<p>レン</p>
+							<p class="staff-text">2016.12.1 生まれ　MIX</p>
+						</div>
+						<div class="staff-items">
+							<img src="images/cat02.jpg">
+							<p>リコ</p>
+							<p class="staff-text">2016.12.1 生まれ　MIX</p>
+						</div>
+						<div class="staff-items">
+							<img src="images/cat03.jpg">
+							<p>リカ</p>
+							<p class="staff-text">2016.12.1 生まれ　MIX</p>
+						</div>
+						<div class="staff-items">
+							<img src="images/cat01.jpg">
+							<p>レン</p>
+							<p class="staff-text">2016.12.1 生まれ　MIX</p>
+						</div>
+						<div class="staff-items">
+							<img src="images/cat02.jpg">
+							<p>リコ</p>
+							<p class="staff-text">2016.12.1 生まれ　MIX</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<h2 id="menu">Menu</h2>
+			<p class="text-space">当店は時間制となっております。<br>ご予約のお客様を優先といたします。満員の場合はお待ちいただくことがございます。詳しくはお問い合わせください。</p>
+			<table class="tbl-r05">
+				<tr class="thead">
+					<th>　</th>
+					<th class="font-bold">平日</th>
+					<th class="font-bold">土日・祝</th>
+				</tr>
+				<tr>
+					<td class="font-bold">はじめの１時間</td>
+					<td>ドリンクなし・・・1,000円<br>ワンドリンク・・・1,300円</td>
+					<td>ドリンクなし・・・1,000円<br>ワンドリンク・・・1,600円</td>
+				</tr>
+				<tr class="last">
+					<td class="font-bold">延長30分毎</td>
+					<td>500円</td>
+					<td>600円</td>
+				</tr>
+			</table>
+		</div>
+		<div class="wrapper">
+			<h2 class="h2" id="access">Access</h2>
+			<p class="text-space">神戸市市営地下鉄　海岸線　：　旧居留地・大丸前駅より徒歩10分<br>神戸市市営地下鉄 海岸線　：　三宮花時計前駅より徒歩10分<br>JR西日本 神戸線　：　神戸三宮駅より徒歩12分<br>阪急電鉄 神戸線　：　神戸三宮駅より徒歩12分<br>阪神電車　阪神本線　：　神戸三宮駅より徒歩12分</p>
+			
+		</div>
+		<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13122.680158549763!2d135.1931281!3d34.6882763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda6fb2fcc3879f34!2z5Ym16YCg56S-44Oq44Kr44Os44Oz44OI44K544Kv44O844Or5LiJ5a6u5qCh!5e0!3m2!1sja!2sjp!4v1607663706369!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+		
+	</main>
+	<footer>
+		<div class="footer-items wrapper">
+			<div class="footer-logo"><img src="images/logoFoot.png"></div>
+			<div class="footer-text">
+				<p class="form-button">お問い合わせ</p>
+				<p>〒650-0034<br><br>兵庫県神戸市中央区京町67</p>
+				<div class="form-items">
+					<img src="images/iconTel.png">
+					<p>0000-00-0000</p>
+				</div>
+			</div>
+		</div>
+		<div class="form-wrap wrapper">
+			<h2 class="h2" id="form">Form</h2>
+			<form action="#" method="post">
+				<div class="form-contents">
+					<label>お名前
+						<input type="text" maxlength="10" placeholder="中川敦之">
+					</label>
+				</div>
+				<div class="form-contents">
+					<label>内容
+						<textarea cols="50" rows="10" placeholder="お問い合わせ内容を入力してください。"></textarea>
+					</label>
+				</div>
+				<input type="submit" value="送信" class="button">
+				
+			</form>
+		</div>
+	</footer>
+	<small>&copy; Recurrent All Rights Reserved.</small>
+</body>
+</html>

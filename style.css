@@ -1,0 +1,452 @@
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+}
+
+.wrapper{
+	max-width: 1024px;
+	width: calc(100% - 10em);
+	margin: 2em auto;
+}
+
+.header-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.logo img{
+	width: 150px;
+}
+
+.form-items {
+	display: flex;
+	margin-bottom:5px;
+}
+.form-items p {
+	font-size: 30px;
+	margin:0;
+}
+.form-button{
+	background-color: #eecb27;
+	color:white;
+	background-image: url(images/iconMail.png);
+	background-repeat: no-repeat;
+	background-position: 20%;
+	padding: 10px 10px 10px 40px;
+	margin: 0;
+	text-align: center;
+}
+.drawer ul{
+	list-style-type: none;
+}
+
+
+.nav-wrap ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	padding: 0;
+}
+.nav-wrap a{
+	color: black;
+	text-decoration: none;
+}
+
+.list-before::before{
+	display: block;
+	color: gray;
+	font-size: 5px;
+	text-align: center;
+}
+.header-home::before{
+	content: "home";
+}
+.header-about::before{
+	content: "about-us";
+	}
+.header-staff::before{
+		content: "staff";
+	}
+.header-menu::before{
+		content: "menu";
+}
+.header-access::before{
+		content: "access";
+}
+.color-gray{
+	font-size: 10px;
+	color: gray;
+}
+/*main*/
+.main-img{
+	position: relative;
+}
+
+.main-img img{
+	width: 100%;
+	height:auto;
+}
+
+.main-img p{
+	position: absolute;
+	top:65%;
+	left:65%;
+	transform: translate(-50%,-50%);
+	/*font-size: 20px;*/
+	font-size: 1.5em;
+	white-space: nowrap;
+}
+
+h2::before{
+	content: "---";
+	color: #eecb27;
+	font-size: 25px;
+	padding: 0 5px;
+	letter-spacing: -2px;
+}
+
+.news-item{
+	display: flex;
+}
+.news-item p {
+	color: #999999;
+	margin :10px 5px 0 20px;
+	
+}
+#event{
+	color: #eecb27;
+	border: 1px solid #eecb27;
+}
+.text-box{
+	border: 1px solid #999999;
+	
+}
+.news-text{
+	
+	border-bottom: 1px solid #999999;
+	margin: 0;
+	padding: 10px 20px;
+}
+.border-top{
+	border-top: 2px solid #999999;
+}
+/*staff*/
+#staff-bg{
+	background-color: #eeeeee;
+}
+#staff{
+	padding-top: 20px;
+}
+.staff-flex{
+	display: flex;
+	/*justify-content: space-between;*/
+	flex-wrap:wrap;
+	
+}
+.staff-items{
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: white;
+	border: solid 1px #cccccc;
+	margin:10px auto;
+
+
+
+}
+.staff-items img{
+	max-width: 100%;
+	height: auto;
+}
+.staff-text {
+	text-align: center;
+}
+/*menu*/
+table{
+	border-collapse: collapse;
+	
+	margin: 30px auto;
+}
+table th{
+	background-color: #f9edb6;
+	border:1px solid #eecb27;
+	padding: 20px;
+}
+table td{
+	border: 1px solid #eecb27;
+	padding: 20px;
+	text-align: center;
+}
+
+.font-bold{
+	font-weight: bold;
+}
+.news {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.news p {
+	background-color: #eecb27;
+	color: white;
+	padding: 10px;
+	
+}
+#news-wrap{
+	padding: 50px 0;
+}
+#about-us::after{
+	content: "リカレントについて";
+	display:block;
+	color: gray;
+	font-size: 12px;
+	padding-left: 40px;
+}
+#staff::after{
+	content: "スタッフ";
+	display:block;
+	color: gray;
+	font-size: 12px;
+	padding-left: 40px;
+}
+#menu::after{
+	content: "メニュー";
+	display:block;
+	color: gray;
+	font-size: 12px;
+	padding-left: 40px;
+}
+#access::after{ 
+	content: "アクセス";
+	display:block;
+	color: gray;
+	font-size: 12px;
+	padding-left: 40px;
+}
+.text-space{
+	padding: 0 50px;
+	line-height: 1.8;
+}
+#map {
+	margin: 30px 0;
+}
+
+/*footer*/
+
+
+.footer-items{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.footer-text{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between; 
+}
+/*form*/
+#form::after{
+		content: "お問い合わせ";
+	display:block;
+	color: gray;
+	font-size: 12px;
+	padding-left: 40px;
+}
+/*form*/
+.form-contents{
+	width: 100%;
+}
+.form-contents input{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.form-contents textarea{
+	display: block;
+	resize: none;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.button{
+	width: 100%;
+	height: 50px;
+	background-color: #eecb27;
+	border: none;
+	color: white;
+	transition: all 0.3s;
+}
+.button:hover{
+	color: #eecb27;
+	background-color:black;
+	border-radius: 20px;
+	font-size: 30px;
+}
+small{
+	background-color: black;
+	color: white;
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 5px 0;
+}
+.sp{
+	display: none;
+}
+/*タブレット*/
+@media screen and (max-width:767px){
+	.wrapper{
+		width: calc(100% - 2em);
+	}
+	.text-space{
+		padding: 0;
+	}
+	.main-img p{
+		font-size: 1em;
+	}
+	.tbl-r05 {
+	width: 80%;
+	}
+	.tbl-r05 .thead {
+	display: none;
+	}
+	.tbl-r05 tr {
+	width: 100%;
+	}
+	.tbl-r05 td {
+	display: block;
+	text-align: center;
+	width: 100%;
+	}
+	.tbl-r05 td:first-child {
+	background:  #f9edb6;
+	font-weight: bold;
+	text-align: center;
+	}
+	.tbl-r05 td:before {
+	content: attr(data-label);
+	float: left;
+	font-weight: bold;
+	margin-right: 10px;
+	}
+	.footer-items{
+		display: flex;
+		flex-direction: column;	
+	}
+	.footer-logo {
+		text-align: center;
+	}
+	.footer-logo img{
+		width: 100%;
+		max-width: 250px;
+	}
+	.footer-text{
+		text-align: center;
+	}
+	.form-items{
+		justify-content: center;
+	}
+
+}
+/*スマホ*/
+@media screen and (max-width:480px){
+	.wrapper{
+		width: calc(100% - 1em);
+		margin: 1em auto;
+	}
+	.header-items{
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav-wrap{
+		display: none;
+	}
+	.drawer{
+		display:block;
+	}
+	.menu-btn{
+		position: fixed;
+		top:10px;
+		right:10px;
+		display:flex;
+		height:60px;
+		width: 60px;
+		justify-content: center;
+		align-items: center;
+		z-index:90;
+		background-color:lightsteelblue;
+	}
+	.menu-btn span,
+	.menu-btn span:before,
+	.menu-btn span:after{
+		content:"";
+		display: block;
+		height:3px;
+		width: 25px;
+		border-radius: 3px;
+		background-color: #fff;
+		position: absolute;
+	}
+	.menu-btn span:before{
+		bottom: 8px;
+	}
+	.menu-btn span:after{
+		top: 8px;
+	}
+	#menu-btn-check:checked ~ .menu-btn span{
+		background-color: rgba(255,255,255,0);
+	}
+	#menu-btn-check:checked ~ .menu-btn span::before{
+		bottom: 0;
+		transform: rotate(45deg);
+	}
+	#menu-btn-check:checked ~ .menu-btn span::after{
+		top:0;
+		transform: rotate(-45deg);
+	}
+	.menu-btn span,
+	.menu-btn span::before,
+	.menu-btn span::after{
+		transition: 0.2s;
+	}
+	#menu-btn-check{
+		display: none;
+	}
+	.menu-content{
+		z-index: 80;
+		background-color: lightsteelblue;
+		width: 100%;
+		height:100%;
+		position: fixed;
+		top:0;
+		left:100%;
+		transition: 0.2s;
+	}
+	#menu-btn-check:checked ~ .menu-content{
+		left: 0;
+	}
+	
+	.menu-items{
+		line-height:2em;
+	}
+	.menu-items a {
+		color: #fff;
+		text-decoration: none;
+	}
+	.main-img p {
+		top: 40%;
+		left: 50%;
+	}
+	#news-wrap{
+		padding:0;
+	}
+	table td{
+		padding:20px 10px;
+	}
+}
+
+
+
+
